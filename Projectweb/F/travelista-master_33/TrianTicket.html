@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<title> Responsive Login and Signup Form </title>-->
+
+        <!-- CSS -->
+     
+    
+                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        
+        	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/jquery-ui.css">				
+			<link rel="stylesheet" href="css/nice-select.css">							
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">				
+			<link rel="stylesheet" href="css/main.css">
+            <link rel="stylesheet" href="css/ticket.css">
+            
+        
+                        
+    </head>
+        
+    <body>
+        <header id="header">
+				<div class="container main-menu">
+					<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				        <a href="index.html"><img width="100" hieght="100" src="img/logo3-removebg-preview.png" alt="" title="" /></a>
+				      </div>
+				      <nav id="nav-menu-container">
+				        <ul class="nav-menu">
+				          <li><a href="index.html">Home</a></li>
+				          <li><a href="about.html">Train Ticket</a></li>
+                          <li class="menu-has-children"><a href="">Train informaton</a>
+				            <ul>
+				              <li><a href="blog-home.html">Slots</a></li>
+				              <li><a href="blog-single.html">Seat availability</a></li>
+				            </ul>
+				          </li>
+                             <li class="menu-has-children"><a href="">Services</a>
+				            <ul>
+				              <li><a href="blog-home.html">Food</a></li>
+				              <li><a href="blog-single.html">Cancellation and Refunds</a></li>
+				            </ul>
+				          </li>
+                            
+				          <li><a href="packages.html">Maps</a></li>
+				          <li><a href="hotels.html">Things to do </a></li>
+				          <li><a href="insurance.html">Offers</a></li>
+                           <li><a href="contact.html">About us</a></li>
+		          
+				          <li><a href="contact.html">Contact us</a></li>
+                         <li><a href="sighin.html"> <img src="img/R%20(1).png" width = 30 height= 30 alt=""> </a></li>
+				        </ul>
+				      </nav><!-- #nav-menu-container -->					      		  
+					</div>
+				</div>
+			</header><!-- #header -->
+        <div> 
+        
+<div class="index conticket animated zoomIn">
+
+  <div class="form contactform">
+    <div id="page1">
+      <h1>Book Your Train Ticket</h1>
+      <div class="index row">
+
+        <div class="field col-sm-6">
+          <label for="from">From :</label>
+          <input id="from" type="text" />
+        </div>
+
+        <div class="field col-sm-6">
+          <label for="to">To :</label>
+          <input id="to" type="text" />
+        </div>
+
+
+        <div class="field fieldDate col-sm-6 col-centered">
+          <label  for="datepicker">Date</label>
+          <input id="datepicker" type="text" />
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="field col-sm-6 col-centered ">
+          <div id="search" class="btn  btn-primary">Search for Trains</div>
+        </div>
+      </div>
+    </div>
+    <div id="page2" class="animated zoomInDown">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="table-responsive  text-center">
+            <table class="table table-bordered table-hover">
+              <caption class="text-center">Available Trains : </caption>
+              <thead>
+                <tr>
+                  <th> Train No</th>
+                  <th>Train Name</th>
+                  <th>Time</th>
+                  <th>Cost</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td colspan='100%'><span class="btn btn-danger book">Book Now</span></td>
+                </tr>
+              </tfoot>
+              <tbody class="member">
+                <tr>
+                  <td class="tnum">78654</td>
+                  <td id="trainname1" class="tnam"></td>
+                  <td class="ttime">04:30 AM</td>
+                  <td class="tcost">₹ 200</td>
+                </tr>
+                <tr>
+                  <td class="tnum">54876</td>
+                  <td id="trainname2" class="tnam"></td>
+                  <td class="ttime">10:15 AM</td>
+                  <td class="tcost">₹ 250</td>
+                </tr>
+                <tr>
+                  <td class="tnum">25312</td>
+                  <td id="trainname3" class="tnam"></td>
+                  <td class="ttime">15:50 PM</td>
+                  <td class="tcost">₹ 300</td>
+                </tr>
+                <tr>
+                  <td class="tnum">45698</td>
+                  <td id="trainname4" class="tnam"></td>
+                  <td class="ttime">21:30 PM</td>
+
+                  <td class="tcost">₹350</td>
+                </tr>
+                <tr>
+                  <td class="tnum">95464</td>
+                  <td id="trainname5" class="tnam"></td>
+                  <td class="ttime">23:15 PM</td>
+
+                  <td class="tcost">₹ 500</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+          </div>
+          <!--end of .table-responsive-->
+        </div>
+      </div>
+
+
+    </div>
+    <!-----page2------>
+    <div id="invis" class="animated fadeInUpBig invis">
+      <div id="selectclass">
+        <h2>Select your class :</h2>
+        <div id="trainClass">
+          <label class="blue"><input type="radio" name="toggle"><span>GEN</span></label>
+          <label class="green"><input type="radio" name="toggle"><span>SL</span></label>
+          <label class="yellow"><input type="radio" name="toggle"><span>AC1</span></label>
+          <label class="pink"><input type="radio" name="toggle"><span>AC2</span></label>
+          <label class="purple"><input type="radio" name="toggle"><span>AC3</span></label>
+        </div>
+        <div id="bfoot">
+          <div class="col-xs-6 ">
+            <span class="btn btn-primary booknow">BOOK NOW</span></div>
+          <div class="col-xs-6 ">
+            <span class="btn btn-danger bookcancel">CANCEL</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------------------invis over--------------------->
+
+
+  </div>
+</div>
+<!----------------------ticket--------------------->
+<div class="final animated flip">
+  <h2> Here is Your Ticket</h2>
+  <div class="ticket" id="ticket">
+    <div class="row">
+      <div class="col-xs-6 pull-left" id="date"></div>
+      <div class="col-xs-6 pull-right ">INDIAN RAILWAYS</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 trainno"><span id="number"></span></div>
+      <div class="col-xs-6 trainname"></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 from">From :<span id="From"></span></div>
+      <div class="col-xs-6 to">To :<span id="To"></span></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 barcode">
+        <table id="barcodes">
+          <tr></tr>
+        </table>
+      </div>
+      <div class="col-xs-2 compartment">S3</div>
+      <div class="col-xs-4 seatno">Seat No:45</div>
+    </div>
+  </div>
+</div>
+            </div>
+         <footer class="footer-area section-gap">
+				<div class="container">
+
+					<div class="row">
+						<div class="col-lg-3  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>About Agency</h6>
+								<p>
+									The world has become so fast paced that people don’t want to stand by reading a page of information, so we provide you with easier and faster travels  with our comfortable trains.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6">
+							<div class="single-footer-widget"> 
+								<h6>Navigation Links</h6>
+								<div class="row">
+									<div class="col">
+										<ul>
+											<li><a href="#">Home</a></li>
+											<li><a href="#">Maps</a></li>
+											<li><a href="#">Services</a></li>
+											
+										</ul>
+									</div>
+									<div class="col">
+										<ul>
+											<li><a href="#">Team</a></li>
+											<li><a href="#">Offers</a></li>
+											<li><a href="#">Contact</a></li>
+										</ul>
+									</div>										
+								</div>							
+							</div>
+						</div>							
+						<div class="col-lg-3  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>Newsletter</h6>
+								<p>
+									For business professionals caught between high OEM price and mediocre print and graphic output.									
+								</p>								
+								<div id="mc_embed_signup">
+									<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
+										<div class="input-group d-flex flex-row">
+											<input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+											<button class="btn bb-btn"><span class="lnr lnr-location"></span></button>		
+										</div>									
+										<div class="mt-10 info"></div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3  col-md-6 col-sm-6">
+							<div class="single-footer-widget mail-chimp">
+								<h6 class="mb-20">InstaFeed</h6>
+								<ul class="instafeed d-flex flex-wrap">
+									<li><img src="img/tr1.jpg" width = 90% height= 58 alt=""></li>
+									<li><img src="img/tr2.jpg" width = 90% height= 58 alt=""></li>
+									<li><img src="img/tr3.jpg" width = 90% height= 58 alt=""></li>
+									<li><img src="img/tr4.jpg" width = 90% height= 58 alt=""></li>
+									<li><img src="img/tr5.jpg" width = 90% height= 58 alt=""></li>
+									<li><img src="img/tr6.jpg" width = 90% height= 58 alt=""></li>
+									<li><img src="img/tr7.jpg" width = 90% height= 58 alt=""></li>
+									<li><img src="img/tr8.jpg" width = 90% height= 58 alt=""></li>
+								</ul>
+							</div>
+						</div>						
+					</div>
+
+					<div class="row footer-bottom d-flex justify-content-between align-items-center">
+						<p class="col-lg-8 col-sm-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Our website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> <a href="https://colorlib.com" target="_blank"></a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+						<div class="col-lg-4 col-sm-12 footer-social">
+							<a href="#"><i class="fa fa-facebook"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+            <script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="js/popper.min.js"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>		
+ 			<script src="js/jquery-ui.js"></script>					
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>						
+			<script src="js/jquery.nice-select.min.js"></script>					
+			<script src="js/owl.carousel.min.js"></script>							
+			<script src="js/mail-script.js"></script>	
+			<script src="js/main.js"></script>	
+            <script src="js/ticket.js"></script>	
+        </body>
+</html>
+<!------ticket------->
+<!------------------------------------------>

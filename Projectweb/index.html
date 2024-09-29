@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    	
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>		
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
+
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+    
+	<script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+	</script>
+	
+	<style>
+		
+		.mode {
+			float:right;
+		}
+		.change {
+			cursor: pointer;
+			border: 1px solid #555;
+			border-radius: 40%;
+			width: 20px;
+			text-align: center;
+			padding: 5px;
+			margin-left: 8px;
+		}
+		.dark{
+			background-color: #222;
+			color: #e6e6e6;
+		}
+	</style>
+</head>
+
+<body>
+    
+  <!-- Header -->
+  <section id="header">
+    <div class="header headcontainer">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+		 <a href="index.html"><img width="150" hieght="100" src="img/logo3-removebg-preview.png" alt="" title="" /></a>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="index.html" data-after="Home">Home</a></li>
+              
+             <!--  <div class="dropdown">
+    <li><a class="dropbtn">Dropdown </a></li>
+      <i class="fa fa-caret-down"></i>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>-->
+            <li><a href="TrainTicket.html" data-after="Service">Train ticket</a></li>
+            <li><a href="OffersKK.html" data-after="Projects">Offers</a></li>
+            <li><a href="trainmove.html" data-after="About">About us </a></li>
+            <li><a href="contact.html" data-after="Contact">Contact us</a></li>
+               <!-- <li><a href="#services" data-after="Service">Services</a></li>-->
+                <li><a href="sighin.html"> <img src="img/R%20(1).png" width = 30 height= 30 alt=""> </a></li>
+                              <li><a href="Admin.html"> <img src="Adminicon/Adminmmm-removebg-preview.png" width = 30 height= 30 alt=""> </a></li>
+
+
+         
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+   
+  <div class="bod">  
+ <style>   
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+     position:relative;
+  margin:auto;
+
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width:auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 300px;
+  width: 10%;
+  text-align: center;
+     background: white;
+    padding: 10px 24px;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+    border-style:groove;
+    border-color:white;
+   top: 60%;
+    left: 45%;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom:0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s; /*l8washaaaaaaa*/
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>    
+   
+  <!-- Hero Section  -->
+ 
+      <div>
+           <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/train1.jpg" style="width:100%" >
+<div id="texttt"> 
+                <div class="container">
+                    <h6 class="WELCOMEE">BOOK YOUR NEXT TRAIN TICKET</h6>
+                </div>
+</div>
+    <div id="texttt2"> 
+                <div class="container">
+            <h3 class="WELCOMEEE">Buy train tickets across Europe. Simple,fast rail booking .</h3>
+
+                </div>
+
+</div>
+               </div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+    <img src="img/money1.png" style="width:100%">
+    <div id="texttt"> 
+                <div class="container">
+                    <h6 class="WELCOMEE"> SPECIAL OFFERS AND PROMOTIONS </h6>
+                </div>
+</div>
+    <div id="texttt2"> 
+                <div class="container">
+            <h3 class="WELCOMEEE">Save you money with our website so you can discover Europe.</h3>
+
+                </div>
+
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/Tickkkket.webp" style="width:100%">
+  <div id="texttt"> 
+                <div class="container">
+                    <h6 class="WELCOMEE"> HURRYYYYY UP  </h6>
+                </div>
+</div>
+    <div id="texttt2"> 
+                <div class="container">
+            <h3 class="WELCOMEEE">To book our specail tickets .</h3>
+
+                </div>
+
+</div></div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+     </div>  
+    </div>
+ 
+  <!-- End Hero Section  -->
+             <script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+    
+    
+
+          
+</script>
+     
+   
+  <!-- End Service Section -->
+
+  <!-- Projects Section -->
+  
+    
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+  <div class ="r">
+    <div class ="c">
+  <section class="ConClasses"><div  class="Sales">
+    <img src="img/1st%20class.jpg" alt="realm">
+    <div class="service-hover-text">
+      <h3>The characteristics of first class.</h3>
+      <h4>&nbsp;</h4>
+      <p>First class tickets in European trains offer passengers larger seats, more legroom, and often complimentary food and drink. Additionally, first-class passengers can take advantage of free WiFi, power outlets, and personal reading lamps. </p>
+    </div>
+    <div class="service-white service-text">
+      <p>First Class.</p>
+      <a href="detailedpreview.html">BOOK NOW</a></div></div> </section> </div>
+    
+   <div class ="c"> <section class="ConClasses"><div class="Sales">
+    <img src="img/2nd%20class.jpg" alt="realm">
+    <div class="service-hover-text">
+      <h3>The characteristics of second class</h3>
+      <h4>&nbsp; </h4>
+      <p>Second class tickets on European trains offer affordable and comfortable travel options with air-conditioned seating, luggage storage areas, and access to onboard food and beverage services. They also provide access to power outlets and often have free WiFi.</p>
+    </div>
+    <div class="service-white service-text">
+      <p>Second Class.</p>
+        <a href="detailedpreview.html">BOOK NOW</a></div></div> </section>  </div>
+    
+    
+    
+    <div class ="c"> <section class="ConClasses"><div class="Sales">
+    <img src="img/3rd%20class.jpg" alt="realm">
+    <div class="service-hover-text">
+      <h3>The characteristics of third class</h3>
+      <h4>&nbsp; </h4>
+      <p>Third class tickets in European trains offer the cheapest option for travelers. These seats often have limited legroom, no meal options or amenities, and may be overcrowded during peak season.</p>
+    </div>
+    <div class="service-white service-text">
+      <p>Third Class.</p>
+        <a href="detailedpreview.html"> BOOK NOW</a></div></div> </section>  </div>
+    
+    </div>
+     
+     
+<!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">More<span> Details</span></h1>
+                  <h1 class="section-title">CHOOSE YOUR <span>PLACE</span></h1>
+
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1> 1</h1>
+            <h2>ITALY</h2>
+            <p>Frecciarossa, Frecciargento, and Frecciabianca): super-fast trains that need special rails to achieve and maintain their top speeds.
+
+The dedicated Frecciarossa high-speed line reaches speeds of 320 mph and runs from Torino in the north, through Milan, Bologna, Florence, Rome, Naples, and finally Salerno.
+
+Rome to Venice, Verona, Bari/Lecce, Lamezia Terme/Reggio Calabria on a combination of high-speed and traditional lines. These trains can reach speeds of 155 mph on some sections of rail.
+
+Milan to Venice, Udine to Trieste, Genoa, and Rome. They also go down to Bari/Lecce on the traditional line. can reach the slower but still respectable speed of 125 mph.
+
+Ready to book your rail journey? Book your train tickets now!!</p>
+          </div>
+          <div class="project-img">
+            <img src="./Adminicon/Italymap.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1> 2</h1>
+            <h2>FRANCE</h2>
+            <p>High speed trains 
+
+TGV
+300 km/h, between all major cities in France, Paris to Nice, Paris to Marseille 
+
+Thalys
+300 km/h, comfortable and very fast, Paris to Brussels, Paris to Amsterdam
+ 
+Eurostar 
+300 km/h,  high speed train from Paris to London 
+
+ICE International 
+German high speed train from Paris to Frankfurt and Munich
+Regional and Intercity trains
+
+TER Trains
+Regional trains between small cities / villages and major cities 
+
+Intercité
+Long distance trains, relative fast, few stops 
+Night trains in France
+
+Thello 
+Night train from Paris to Milan and Venice 
+
+Intercité Nuit 
+Multiple routes, Paris to Nice, Paris to Toulouse</p>
+          </div>
+          <div class="project-img">
+            <img src="./Adminicon/Francemap.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1> 3</h1>
+            <h2>HOLLAND</h2>
+            <p>High speed trains 
+
+Thalys 
+300km/h, very comfortable, Amsterdam to Paris, Amsterdam to Brussels, Rotterdam to Paris 
+
+ICE International 
+200-300 km/h, German high speed train, Amsterdam to Cologne, Amsterdam to Frankfurt 
+
+Eurostar 
+300 km/h, high speed train to the UK, Rotterdam to London, Amsterdam to London 
+TGV (from Belgium to Southern France)  
+300 km/h, high speed train to France, Brussels to Marseille, Brussels to Lyon 
+Regional and Intercity trains
+
+Intercity trains - Domestic and to Belgium / Germany 
+Long distance trains, relative fast, few stops, Amsterdam to Berlin, Amsterdam to Rotterdam, Amsterdam to Bruges 
+
+Sprinter
+Regional trains between small cities / villages and major cities, many stops, relative slow, Schiphol to Amsterdam
+Night trains 
+
+At the moment there are no night trains departing from The Netherlands. Nearby: Dusseldorf to Vienna, Dusseldorf to Innsbruck</p>
+          </div>
+          <div class="project-img">
+            <img src="./Adminicon/Holandmap.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1> 4</h1>
+            <h2>UK</h2>
+            <p>Approximately 2,500 UK stations are served by National Rail. Have a look at our map that shows the routes and the train operator(s) that serve them. For more information about the train operators on your preferred route, such as LNER, Southern, Avanti West Coast or Northern Rail, simply click on the links in the page footer..</p>
+          </div>
+          <div class="project-img">
+            <img src="./Adminicon/Ukmap.jpg" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1> 5</h1>
+            <h2>CGERMANY</h2>
+            <p>If you're planning a trip around Germany by train, you'll most likely take one of Deutsche Bahn's services, which connect the major cities in Germany. For example, you can get from Munich to Berlin in 4h 2m, Berlin to Hamburg in 1h 44m, and Frankfurt to Munich in 3h 11m.
+
+If you want to travel to Germany from a neighbouring country, you can choose from a wide range of cross-border trains, including the following:
+
+Thalys, for cross-border routes between France, the Netherlands, Belgium and Germany
+ÖBB, for cross-border routes between Austria and Germany
+DB-SNCF, for cross-border routes between France and Germany.
+As an example of how quickly you can travel from another country to Germany by train, an ÖBB service from Munich to Salzburg could take as little as an hour and a half.</p>
+          </div>
+          <div class="project-img">
+            <img src="./Adminicon/Legendmap.jpg" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+
+  <!-- Contact Section -->
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+01 034 123 1234</h2>
+            <h2>+01 034 231 2143</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>TALYLLYN@gmail.com</h2>
+            <h2>TALYLLYN@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>FMrs Smith 71 Cherry Court SOUTHAMPTON SO53 5PD UK</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3><img width="150" hieght="100" src="img/logo3-removebg-preview.png" alt="" title="" /></span></h3>
+
+				<p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					
+					<a href="#">Train Ticket </a>
+				
+					<a href="#">Offers</a>
+				
+					<a href="#">About us</a>
+										
+					<a href="#">Contact us</a>
+				</p>
+
+				<p class="footer-company-name">TALYLLYN © 2023</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>Fmrs Smith 71 Cherry Court SOUTHAMPTON</span>  SO53 5PD UK</p>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+01 034 231 2143</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a  href="mailto:support@company.com">Talyllyn@train.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About Agency</span>
+The world has become so fast paced that people don’t want to stand by reading a page of information, so we provide you with easier and faster travels  with our comfortable trains.				</p>
+
+				<div class="footer-icons">
+
+					<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+					<a href="https://github.com/login"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+        <script src = "js/Home.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<title> Responsive Login and Signup Form </title>-->
+
+        <!-- CSS -->
+     
+    
+                
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        
+        	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			
+        <!-- Boxicons CSS -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        
+        	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<!---mohema--><link rel="stylesheet" href="css/jquery-ui.css">				
+            <link rel="stylesheet" href="css/ticket.css">
+        
+
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>		
+ <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>My Website</title>
+</head>
+
+<body>
+<!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+		 <a href="index.html"><img width="150" hieght="100" src="img/logo3-removebg-preview.png" alt="" title="" /></a>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+              
+              <!-- <div class="dropdown">
+    <li><a class="dropbtn">Dropdown </a></li>
+      <i class="fa fa-caret-down"></i>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+            <li><a href="TrainTicket.html" data-after="Service">Train tickat</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>--->
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+                <li><a href="#services" data-after="Service">Services</a></li>
+                <li><a href="sighin.html"> <img src="img/R%20(1).png" width = 30 height= 30 alt=""> </a></li>
+
+         
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+ <div id="hero">
+    <div class="hero container">
+      <div>
+          <h1>You are going to love <span></span></h1>
+        <h1>buing train ticket <span></span></h1>
+        <h1>WELCOME <span></span></h1>
+        <a href="#projects" type="button" class="cta">BOOK A TICKET</a>
+      </div>
+    </div>
+  </div>
+  <div class="bod"> 
+        
+<div class="index conticket animated zoomIn">
+
+  <div class="formm contactform">
+    <div id="page1">
+        
+      <h1 class="bookkyouticket">Book Your Train Ticket</h1>
+      <div class="index row">
+
+        <div class="field col-sm-6">
+          <label for="from">From :</label>
+          <input id="from" type="text" />
+        </div>
+
+        <div class="field col-sm-6">
+          <label for="to">To :</label>
+          <input id="to" type="text" />
+        </div>
+
+
+        <div class="field fieldDate col-sm-6 col-centered">
+          <label  for="datepicker">Date</label>
+          <input id="datepicker" type="text" />
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="field col-sm-6 col-centered ">
+          <div id="search" class="btn  btn-primary"> <button class="buttonp2">Search for Trains</button></div>
+        </div>
+      </div>
+    </div>
+    <div id="page2" class="animated zoomInDown" >
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="table-responsive  text-center">
+            <table class="table table-bordered table-hover">
+              <caption class="text-center">Available Trains : </caption>
+              <thead>
+                <tr>
+                  <th> Train No</th>
+                  <th>Train Name</th>
+                  <th>Time</th>
+                  <th>Cost</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td colspan='100%'><span class="btn btn-danger book"><button class="buttonp2">Book Now</button></span></td>
+                </tr>
+              </tfoot>
+              <tbody class="member">
+                <tr>
+                  <td class="tnum">78654</td>
+                  <td id="trainname1" class="tnam"></td>
+                  <td class="ttime">04:30 AM</td>
+                  <td class="tcost">₹ 200</td>
+                </tr>
+                <tr>
+                  <td class="tnum">54876</td>
+                  <td id="trainname2" class="tnam"></td>
+                  <td class="ttime">10:15 AM</td>
+                  <td class="tcost">₹ 250</td>
+                </tr>
+                <tr>
+                  <td class="tnum">25312</td>
+                  <td id="trainname3" class="tnam"></td>
+                  <td class="ttime">15:50 PM</td>
+                  <td class="tcost">₹ 300</td>
+                </tr>
+                <tr>
+                  <td class="tnum">45698</td>
+                  <td id="trainname4" class="tnam"></td>
+                  <td class="ttime">21:30 PM</td>
+
+                  <td class="tcost">₹350</td>
+                </tr>
+                <tr>
+                  <td class="tnum">95464</td>
+                  <td id="trainname5" class="tnam"></td>
+                  <td class="ttime">23:15 PM</td>
+
+                  <td class="tcost">₹ 500</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+          </div>
+          <!--end of .table-responsive-->
+        </div>
+      </div>
+
+
+    </div>
+    <!-----page2------>
+    <div id="invis" class="animated fadeInUpBig invis">
+      <div id="selectclass">
+        <h2>Select your class :</h2>
+        <div id="trainClass">
+          <label class="blue"><input type="radio" name="toggle"><span>GEN</span></label>
+          <label class="green"><input type="radio" name="toggle"><span>SL</span></label>
+          <label class="yellow"><input type="radio" name="toggle"><span>AC1</span></label>
+          <label class="pink"><input type="radio" name="toggle"><span>AC2</span></label>
+          <label class="purple"><input type="radio" name="toggle"><span>AC3</span></label>
+        </div>
+        <div id="bfoot">
+          <div class="col-xs-6 ">
+            <span class="btn btn-primary booknow"><button class="buttonp2">Book Now</button></span></div>
+          <div class="col-xs-6 ">
+            <span class="btn btn-danger bookcancel"><button class="buttonp2">Cancel</button></span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------------------------invis over--------------------->
+
+
+  </div>
+</div>
+<!----------------------ticket--------------------->
+<div class="final animated flip r">
+  <h2> Here is Your Ticket</h2>
+  <div class="ticket" id="ticket">
+    <div class="row">
+      <div class="col-xs-6 pull-left" id="date"></div>
+      <div class="col-xs-6 pull-right ">INDIAN RAILWAYS</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 trainno"><span id="number"></span></div>
+      <div class="col-xs-6 trainname"></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 from">From :<span id="From"></span></div>
+      <div class="col-xs-6 to">To :<span id="To"></span></div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 barcode">
+        <table id="barcodes">
+          <tr></tr>
+        </table>
+      </div>
+      <div class="col-xs-2 compartment">S3</div>
+      <div class="col-xs-4 seatno">Seat No:45</div>
+    </div>
+  </div>
+</div>
+    <!-----------------------------------invis over--------------------->
+
+ 
+<!------ticket------->
+ <section id="contact">
+    <div class="contact container">
+      <div>
+          <h1> Counter for Numbers of booking ticket today</h1>
+ 
+<!----<h3>jQuery counter to count up to a target number</h3>--->
+
+<div class="wrapper">
+    <div class="counter col_fourth">
+      <i class="fa  fa-2x"><img width="35%" src="Icons/crown.png"></i>
+      <h2 class="timer count-title count-number" data-to="400" data-speed="3000"></h2>
+       <p class="count-text ">Number of Books for First Class</p>
+    </div>
+
+    <div class="counter col_fourth">
+      <i class="fa  fa-2x"><img width="35%" src="Icons/seat.png"></i>
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="3000"></h2>
+      <p class="count-text ">Number of Books for Secound class</p>
+    </div>
+
+    <div class="counter col_fourth">
+      <i class="fa  fa-2x"><img width="35%" src="Icons/subway.png"></i>
+      <h2 class="timer count-title count-number" data-to="11900" data-speed="3000"></h2>
+      <p class="count-text ">Number of Books for Third</p>
+    </div>
+
+    <div class="counter col_fourth end">
+      <i class="fa  fa-2x"><img width="35%" src="Icons/world-wide-web.png"></i>
+      <h2 class="timer count-title count-number" data-to="15700" data-speed="3000"></h2>
+      <p class="count-text ">Number of Host visits our Page</p>
+    </div>
+</div> 
+        </div>
+     </div>
+        </section>
+<!-- Contact Section -->
+
+  <!-- End Contact Section -->
+        
+<!------------------------------------------>     
+<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>Company<span>logo</span></h3>
+
+				<p class="footer-links">
+					<a href="#" class="link-1">Home</a>
+					
+					<a href="#">Blog</a>
+				
+					<a href="#">Pricing</a>
+				
+					<a href="#">About</a>
+					
+					<a href="#">Faq</a>
+					
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-company-name">Company Name © 2015</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1.555.555.5555</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">support@company.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+
+			</div>
+
+		</footer>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 			<script src="js/jquery-ui.js"></script>					
+            <script src="js/ticket.js"></script>	
+            <script src="js/count.js"></script>
+
+</body>
+
+</html>
